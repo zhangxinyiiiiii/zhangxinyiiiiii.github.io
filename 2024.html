@@ -17,49 +17,69 @@
         /*网页标题*/
         header {
             font-size: 32px; 
-            font-weight: bold;
+            font-weight: 600; /*regular weight is 400*/
             color: white;
-            padding: 20px; 
+            padding: 16px; 
             background-color: #333;
             text-align: center;
         }
         /*网页目录*/
+        /*navigator bar*/
         nav {
             color: #333; 
-            background-color: #f4f4f4;
+            background-color: transparent;
             overflow: hidden;
             text-align: center;
+            width: 100%;
         }
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: inline-block; /* 使菜单水平居中 */
         }
+        /*一级目录*/
         nav ul li {
-            float: left;
+            display: inline-block; 
         }
         nav ul li a {
             display: block;
-            color: #f2f2f2;
+            color: #333;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            background-color: transparent;
         }
         nav ul li a:hover {
+            color: #333;
             background-color: #ddd;
-            color: black;
         }
+        /*隐藏二级菜单*/
         nav ul li ul {
             display: none;
             position: absolute;
             min-width: 160px;
+            background-color: rgba(221, 221, 221, 0.5);
             z-index: 1;
         }
-        nav ul li:hover ul {
+        /*鼠标悬停显示二级目录*/
+        nav ul li:hover > ul {
             display: block;
         }
+        /*二级目录*/
         nav ul li ul li {
-            float: none;
+            display: block;
+            width: 100%;
+        }
+        nav ul li ul li a {
+            color: #333; 
+            padding: 10px 16px;
+            text-decoration: none;
+            background-color: rgba(221, 221, 221, 0.5); /*#ddd,alpha=0.5*/
+        }
+        nav ul li ul li a:hover {
+            background-color: #ddd; /* 鼠标悬停时二级菜单项的背景颜色 */
+            color: #333; /* 鼠标悬停时二级菜单项的文字颜色 */
         }
         /*文字内容主体*/
         section {
@@ -79,9 +99,10 @@
             padding: 20px 20px; /* 设置页面的内边距 */
         }
         footer {
-            background-color: #333;
+            font-size: 8px;
             color: white;
-            padding: 5px 0;
+            background-color: #333;
+            padding: 2.5px 0;
             position: fixed;
             bottom: 0;
             width: 100%;

@@ -6,19 +6,26 @@
     <title>Personal Space</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  /* 使页面的高度占满视口 */
             margin: 0; /* 设置页面的外边距 */
             padding: 0; /* 设置页面的内边距 */
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            text-align: center;
         }
         .preface {
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4;  /* 可以考虑背景颜色与 body 不同 */
             padding: 40px;
             border-radius: 10px;
             max-width: 80%;
             width: 500px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
         }
         header {
             background-color: #333;
@@ -45,7 +52,7 @@
             text-decoration: none;
         }
         nav ul li a:hover {
-            background-color: #ddd;
+            background-color: rgba(51, 51, 51, 0.5);
             color: black;
         }
         nav ul li ul {

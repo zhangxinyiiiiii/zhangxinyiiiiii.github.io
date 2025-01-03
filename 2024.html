@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2024</title>
     <style>
+        /*网页所有课件部分*/
         body {
             font-family: Arial, sans-serif;
             margin: 0; /* 设置页面的外边距 */
@@ -12,14 +13,18 @@
             background-color: #f4f4f4;
             text-align: center;
         }
+        /*网页标题*/
         header {
             background-color: #333;
             color: white;
             padding: 20px; /* 设置页面的内边距 */
+            text-align: center;
         }
+        /*网页目录*/
         nav {
             background-color: #333;
             overflow: hidden;
+            text-align: center;
         }
         nav ul {
             list-style-type: none;
@@ -52,9 +57,22 @@
         nav ul li ul li {
             float: none;
         }
+        /*文字内容主体*/
         section {
             margin: 20px;
             padding: 5px 5px; /* 设置页面的内边距 */
+        }
+        .left-align {
+            text-align: left; /* 左对齐 */
+            line-height: 1.5; /* 设置行间距为1.5倍 */
+            margin-bottom: 30px;
+            padding: 20px 20px; /* 设置页面的内边距 */
+        }
+        .right-align {
+            text-align: right; /* 右对齐 */
+            line-height: 1.5; /* 设置行间距为1.5倍 */
+            margin-bottom: 30px;
+            padding: 20px 20px; /* 设置页面的内边距 */
         }
         footer {
             background-color: #333;
@@ -65,19 +83,12 @@
             width: 100%;
             text-align: center;
         }
-        .left-align {
-            text-align: left; /* 左对齐 */
-            line-height: 1.5; /* 设置行间距为1.5倍 */
-            padding: 20px 20px; /* 设置页面的内边距 */
-        }
-        .right-align {
-            text-align: right; /* 右对齐 */
-            line-height: 1.5; /* 设置行间距为1.5倍 */
-            padding: 20px 20px; /* 设置页面的内边距 */
-        }
     </style>
 </head>
-<body>    
+
+<body> 
+    <header>2024</header>
+    
     <nav>
         <ul>
             <li>
@@ -98,15 +109,18 @@
             </li>
         </ul>
     </nav>
-    <section>
-        <p class="left-align">
-            可算是着手搭建个人网页了。
-            <br>照葫芦画瓢看起来还不错，但是还没有分区目录，内容也没有上传。这里会记录气象学的学习笔记和不太隐私的所见所想。希望这种一股脑从垃圾做起来的经历可以帮助修正完美主义心态。
-        </p>
-        <p class="right-align">
-            2024-12-29 晚，芬兰-赫尔辛基
-        </p>
-    </section>
+
+    <main>
+        <section>
+            <p class="left-align">
+                搭建个人网页的想法四年前就有了，现在可算动手了。
+                <br>照葫芦画瓢看起来还不错，但是还没有分区目录，内容也没有上传。这里记录了气象学的学习笔记和不太隐私的所见所闻。希望这种一股脑从垃圾做起来的经历可以帮助修正完美主义心态。
+            </p>
+            <p class="right-align">
+                2024-12-29 晚，芬兰-赫尔辛基
+            </p>
+        </section>
+    </main>
         
     <footer>
         <p>&copy; 2024 [zhangxinyiiiiii]. All Rights Reserved.</p>
